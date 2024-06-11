@@ -1,10 +1,8 @@
-# MileStoneForPlatform
-Here’s an updated step-by-step procedure and milestones for building the hackathon platform:
 
-### Step-by-Step Procedure and Milestones
 
-#### Milestone 1: Setting Up the Project
+## Step-by-Step Procedure and Milestones
 
+### Milestone 1: Setting Up the Project
 1. **Initialize the Project**
    - Set up a Git repository for version control.
    - Initialize the React project with `create-react-app hackathon-platform`.
@@ -22,8 +20,7 @@ Here’s an updated step-by-step procedure and milestones for building the hacka
    - Set up authentication and database.
    - Integrate Supabase with your React frontend.
 
-#### Milestone 2: User Registration and Authentication
-
+### Milestone 2: User Registration and Authentication
 1. **User Registration and Login**
    - Create registration and login forms in React.
    - Use Supabase Auth for handling user authentication.
@@ -33,13 +30,21 @@ Here’s an updated step-by-step procedure and milestones for building the hacka
    - Use Supabase's email verification feature.
    - Customize email templates for registration confirmation and verification via Supabase dashboard.
 
-#### Milestone 3: Hackathon Rounds Management
+### Milestone 3: Team Registration and Management
+1. **Team Registration**
+   - Create forms for team creation and joining existing teams.
+   - Store team information and member associations in Supabase.
 
+2. **Team Selection**
+   - Implement functionality for team leaders to invite members via email.
+   - Set up a process for approving team join requests.
+
+### Milestone 4: Hackathon Rounds Management
 1. **Database Schema Design**
    - Create tables in Supabase for users, teams, hackathon rounds, submissions, and judges.
    - Implement relationships between these tables.
 
-2. **Schema Example:**
+2. **Schema Example**
    ```sql
    -- Users table
    CREATE TABLE users (
@@ -90,8 +95,7 @@ Here’s an updated step-by-step procedure and milestones for building the hacka
    );
    ```
 
-#### Milestone 4: Submission Management
-
+### Milestone 5: Submission Management
 1. **Round 1: Video Submission**
    - Create a form for video submissions in React.
    - Integrate AWS S3 for video uploads. Use Supabase to store video links.
@@ -105,8 +109,7 @@ Here’s an updated step-by-step procedure and milestones for building the hacka
    - Manage team progress and store relevant data in Supabase.
    - Handle notifications for selected teams using Supabase functions.
 
-#### Milestone 5: Judge and Admin Panel
-
+### Milestone 6: Judge and Admin Panel
 1. **Admin Panel**
    - Create an admin panel in React for managing hackathon rounds and submissions.
    - Implement functionality for screening and selecting teams.
@@ -115,8 +118,7 @@ Here’s an updated step-by-step procedure and milestones for building the hacka
    - Create a panel for judges to review submissions.
    - Implement scoring and feedback mechanisms.
 
-#### Milestone 6: Final Polishing and Deployment
-
+### Milestone 7: Final Polishing and Deployment
 1. **Frontend Design and Usability**
    - Use design libraries like Material-UI for better UI components.
    - Implement responsive design for mobile compatibility.
@@ -129,5 +131,3 @@ Here’s an updated step-by-step procedure and milestones for building the hacka
    - Deploy your frontend on Vercel or Netlify.
    - Ensure your Supabase instance is properly configured and secured.
    - Set up AWS S3 or Supabase storage for file uploads.
-
-By following these milestones and utilizing the recommended tools, you can build a robust platform for your hackathon. If you have any specific questions or need further assistance with any step, feel free to ask!
